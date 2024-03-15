@@ -38,8 +38,6 @@ class StudentMarkManagement:
             print(f"Student ID: {student.student_id} --- Student name: {student. student_name} --- DOB: {student.student_dob}")
             print()
 
-    
-
     def input_course(self):
         number_course = int(input("Enter number of course: "))
         for x in range(number_course):
@@ -114,21 +112,21 @@ while True:
     choice = int(input("Enter your choice: "))
 
     if choice == 1:
-        x.input_student
+        x.input_student()
     if choice == 2:
-        x.input_course
+        x.input_course()
     if choice == 3:
-        x.input_mark
+        x.input_mark()
     if choice == 4:
-        x.course_list
+        x.course_list()
     if choice == 5:
-        x.student_list
+        x.student_list()
     if choice == 6:
-        x.student_mark_list
+        x.student_mark_list()
     if choice == 7:
-        x.total_students
+        x.total_students()
     if choice == 8:
-        x.total_courses
+        x.total_courses()
     if choice == 9:
         break
     else:
